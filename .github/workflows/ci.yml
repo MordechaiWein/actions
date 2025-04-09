@@ -4,7 +4,8 @@ on: push
 
 jobs:
   test:
-    name: Test X-X
+    name: Test
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Total SHIT SHOW!"
+      - name: "STEP LABEL"
+        run: echo "Total SHIT SHOW!"
