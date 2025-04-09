@@ -3,6 +3,5 @@ name: Test Workflow
 on: push
 
 jobs:
-  bannana:
-    steps:
-      - run: echo "Hello from GitHub Actions!"
+  test:
+    runs-on: ubuntu-latest
