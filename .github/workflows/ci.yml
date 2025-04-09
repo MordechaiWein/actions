@@ -4,6 +4,5 @@ on: push
 
 jobs:
   bannana:
-    runs-on: ubuntu-latest
     steps:
       - run: echo "Hello from GitHub Actions!"
