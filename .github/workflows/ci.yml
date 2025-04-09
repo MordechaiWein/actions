@@ -4,7 +4,7 @@ on: push
 
 jobs:
   test:
-    name: Test
+    name: ${{ github.actor }}
     runs-on: ubuntu-latest
     steps:
       - name: "STEP LABEL"
