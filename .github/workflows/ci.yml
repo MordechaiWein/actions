@@ -1,4 +1,4 @@
-name: Test Workflow
+name: CD Push Updates to VM
 
 on: push
 
