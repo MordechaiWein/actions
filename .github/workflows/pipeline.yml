@@ -5,4 +5,10 @@ on:
     outputs:
       tag:
         description: "SAMPLE TAG"
-        value: "Hello Martin Wein"
+        value: ${{ jobs.main.outputs.tag }}
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    outputs:
+      tag: "HELLO WORLD MARTIN"
