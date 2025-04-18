@@ -11,4 +11,8 @@ jobs:
   main:
     runs-on: ubuntu-latest
     outputs:
-      tag: "HELLO WORLD MARTIN"
+      tag: ${{ steps.set.outputs.tag }}
+    steps:
+      - id: set
+        run: echo "tag=HELLO WORLD MARTIN" >> "$GITHUB_OUTPUT"
+
