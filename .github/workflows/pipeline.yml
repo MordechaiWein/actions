@@ -14,5 +14,4 @@ jobs:
       tag: ${{ steps.set.outputs.tag }}
     steps:
       - id: set
-        run: echo "tag=HELLO WORLD MARTIN" >> "$GITHUB_OUTPUT"
-
+        run: echo "tag=THIS CAME FROM PIPELINE" >> "$GITHUB_OUTPUT"
