@@ -1,7 +1,7 @@
 function App() {
   return (
     <main>
-      <h1>Actions App</h1>
+      <h1>Actions App feature</h1>
     </main>
   )
 }

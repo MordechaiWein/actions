@@ -1,0 +1,17 @@
+name: Pipeline
+
+on:
+  workflow_call:
+    outputs:
+      tag:
+        description: "SAMPLE TAG"
+        value: ${{ jobs.main.outputs.tag }}
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    outputs:
+      tag: ${{ steps.set.outputs.tag }}
+    steps:
+      - id: set
+        run: echo "tag=THIS CAME FROM PIPELINE" >> "$GITHUB_OUTPUT"
